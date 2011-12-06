@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/wonderSlide.js" type="text/javascript" ></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#wonderfyMe").wonderSlide({
+                transitionEffect: "fadeInCurtain",
+                lodingImage: "content/loading.gif",
+                height: 400,
+                width: 800,
+                nextButton: "#nextBtn",
+                previousButton: "#previousBtn",
+                milliseconds: 3000
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <ul id="wonderfyMe">
+        <li><img src="Images/00.jpg"/></li>
+        <li><img alt="Un hermoso paisaje" src="Images/01.jpg"/></li>
+        <li><img alt="" src="Images/02.jpg"/></li>
+        <li><img alt="El cosmos, infinito" src="Images/10.jpg"/></li>
+        <li><img alt="Lindo lugar, no?" src="Images/11.jpg"/></li>
+        <li><img alt="Lorem ipsun dolor" src="Images/12.jpg"/></li>
+    </ul>
+    <a href="javascript:;" id="previousBtn">Anterior</a>
+     | 
+    <a href="javascript:;" id="nextBtn">Siguiente</a>
+</body>
+</html>
